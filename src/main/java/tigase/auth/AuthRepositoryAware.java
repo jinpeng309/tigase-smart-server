@@ -1,8 +1,8 @@
 package tigase.auth;
 
-import javax.security.auth.callback.CallbackHandler;
-
 import tigase.db.AuthRepository;
+
+import javax.security.auth.callback.CallbackHandler;
 
 /**
  * Interface should be implemented by {@linkplain CallbackHandler} instance if
@@ -10,12 +10,11 @@ import tigase.db.AuthRepository;
  */
 public interface AuthRepositoryAware {
 
-	/**
-	 * Sets {@linkplain AuthRepository}.
-	 * 
-	 * @param repo
-	 *            {@linkplain AuthRepository}.
-	 */
-	void setAuthRepository(AuthRepository repo);
+    /**
+     * Sets {@linkplain AuthRepository}.
+     *
+     * @param repo {@linkplain AuthRepository}.
+     */
+    void setAuthRepository(AuthRepository repo);
 
 }
